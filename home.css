@@ -1,0 +1,23 @@
+body{
+   height: 500px;
+background-image: url('livrerecette.jpg');
+background-repeat: no-repeat;
+background-size:cover;
+background-position:center;
+
+
+color:black;
+width: 300px;}
+.nav{height: 600px;
+   width: 1250px;}
+div{display: block;}
+
+ 
+
+a:link{color:white;}
+.posfooter{position: absolute;
+left: 0;
+bottom: 0;
+font-size:18px;
+padding:12px 24px;
+color: white;}
