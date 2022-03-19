@@ -1,5 +1,8 @@
-.postfooter{position: absolute;
+.posfooter{position: absolute;
     left: 0;
     bottom: 4;
     font-size:18px!important;
-    padding:12px 24px;}
+    padding:12px 24px;
+color: white;}
+
+    
