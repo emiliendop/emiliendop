@@ -20,8 +20,8 @@ background-color: black!important;}
 <div class="emi3">
 	<div class="w3-top w3-hide-small" style="z-index: 1; top: 0;">
 		<div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
-		  <a href="home.html" class="w3-bar-item w3-button"><i>Accueil</i></a>
-		  <a href="recette.html" class="w3-bar-item w3-button"><i>Recettes</i></a>
+		  <a href="home.php" class="w3-bar-item w3-button"><i>Accueil</i></a>
+		  <a href="recette.php" class="w3-bar-item w3-button"><i>Recettes</i></a>
 		  <a href="#about" class="w3-bar-item w3-button"><i>A Propos</i></a>
 		  <a href="#contact" class="w3-bar-item w3-button"><i>Contact</i></a>
       <div style="float: right!important;">
@@ -43,23 +43,20 @@ background-color: black!important;}
   
       <div id="Pizza" class="w3-container menu w3-padding-32 w3-white" style="display: block;">
         
-        <p class="w3-text-grey">Sauce arachide poulet fumé <a href=""><span class="w3-right w3-tag w3-dark-grey w3-round">Plus de details</span></a></p>
+        <p class="w3-text-grey">BROWNIE<a href=""><span class="w3-right w3-tag w3-dark-grey w3-round">Plus de details</span></a></p>
         
         <hr>
     
        
         
-        <p class="w3-text-grey">Pilé à l'haricot rouge<a href=""><span class="w3-right w3-tag w3-dark-grey w3-round">Plus de details</span></a></p>
+        <p class="w3-text-grey">CHOUQUETTES<a href=""><span class="w3-right w3-tag w3-dark-grey w3-round">Plus de details</span></a></p>
         
         <hr>
   
-        <p class="w3-text-grey">Taro sauce jaune obstaclé <a href=""><span class="w3-right w3-tag w3-dark-grey w3-round">Plus de details</span></a></p>
+        <p class="w3-text-grey">GAUFRES LIEGEOISES<a href=""><span class="w3-right w3-tag w3-dark-grey w3-round">Plus de details</span></a></p>
         
         <hr>
-        <p class="w3-text-grey">Okok à la viande de boeuf <a href=""><span class="w3-right w3-tag w3-dark-grey w3-round">Plus de details</span></a></p>
         
-        
-        <hr>
         <a href=""><span class="w3-left w3-tag w3-red w3-round">Plus de recettes</span></a></p>
      
       </div>

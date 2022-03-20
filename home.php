@@ -20,8 +20,8 @@ font-family: "Amatic SC", sans-serif;}
 <div class="nav">
 	<div class="w3-top w3-hide-small" style="z-index: 1; top: 0;">
 		<div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
-		  <a href="home.html" class="w3-bar-item w3-button"><i>Accueil</i></a>
-		  <a href="recette.html" class="w3-bar-item w3-button"><i>Recettes</i></a>
+		  <a href="home.php" class="w3-bar-item w3-button"><i>Accueil</i></a>
+		  <a href="recette.php" class="w3-bar-item w3-button"><i>Recettes</i></a>
 		  <a href="#about" class="w3-bar-item w3-button"><i>A Propos</i></a>
 		  <a href="#contact" class="w3-bar-item w3-button"><i>Contact</i></a>
 		  <div style="float: right!important;">
