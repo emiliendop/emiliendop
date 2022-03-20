@@ -11,7 +11,7 @@
     $id_rec=$_GET['id_rec'];
     $nom=$_GET['nom'];
     ?>
-    <p>ingrédian neccesaire pour la prepartion de <?php echo $nom ;?> : </p>
+    <p>Ingrédients neccesaire pour la preparation de <?php echo $nom ;?> : </p>
     <?php $requet="SELECT `nom`,`quantite`FROM `recette_ingredient`,`ingredient` where `recette_ingredient`.idIngredient=`ingredient`.id and `recette_ingredient`.idRecette='".$id_rec."'";
         $Result= $connexion->query($requet)
     ;?>
@@ -29,6 +29,6 @@
             <li><?php echo $colom['description'];?></li><br>
         <?php endwhile?>
     </ol>
-    <button><a href="acceuille.php">a l'acceuille</a></button>
+    <button><a href="home.php">ACCUEIL</a></button>
 </body>
 </html>
