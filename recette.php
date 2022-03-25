@@ -30,32 +30,27 @@ background-color: black!important;}
 		</div>
 	  </div>
 		<!-- Menu Container -->
+    <?php $connexion= new mysqli("localhost","root","","cuisine");
+        $requet="SELECT * FROM `recette`";
+        $Result= $connexion->query($requet);
+    ?>
 <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
     <div class="w3-content">
     
       <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">RECETTES</h1>
       <div class="w3-row w3-center  ">
        
-          <div class="  w3-padding-large w3-hover-red w3-red">NOS RECETTES LES PLUS CONSULTEES</div>
-        
+          <div class="  w3-padding-large w3-hover-red w3-red">NOS RECETTES LES PLUS CONSULTEES</div> 
        
       </div>
   
-      <?php $connexion= new mysqli("localhost","root","","cuisine");
 
-        $requet="SELECT * FROM `recette`";
-
-        $Result= $connexion->query($requet);
-
-    ?>
-
-    <?php while($row=$Result->fetch_array(MYSQLI_ASSOC)):?>
-
+      <?php while($row=$Result->fetch_array(MYSQLI_ASSOC)):?>
         <p><a href="information.php?id_rec=<?=$row['id']?>&nom=<?=$row['nom']?>"><?php echo $row['nom']; ?></a></p>
+      <?php endwhile?>
+      <button><a href="ajouterrecette.php">ajouter</a></button>
+        
 
-    <?php endwhile?>
-      
-     
   
     </div>
    
@@ -68,35 +63,3 @@ background-color: black!important;}
 </body>
 </html>
 
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>INDEX</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-<style>
-body, html {height: 100%}
-body {font-family: "Amatic SC", sans-serif}
-
-</style>
-</head>
-<body>
-
-
-<div class="w3-top w3-hide-small">
-  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" >
-    <a href="https://www.netflix.com/fr/" class="w3-bar-item w3-button">NETFLIX</a>
-    <a href="https://www.amazon.fr/" class="w3-bar-item w3-button">AMAZON</a>
-    <a href="https://www.youtube.com/?hl=FR" class="w3-bar-item w3-button">YOUTUBE</a> 
-  </div>
-</div>
-  
-
-
-
-
-</body>
-</html>
