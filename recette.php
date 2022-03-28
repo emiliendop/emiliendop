@@ -48,7 +48,7 @@ background-color: black!important;}
       <?php while($row=$Result->fetch_array(MYSQLI_ASSOC)):?>
         <p><a href="information.php?id_rec=<?=$row['id']?>&nom=<?=$row['nom']?>"><?php echo $row['nom']; ?></a></p>
       <?php endwhile?>
-      <button><a href="ajouterrecette.php">ajouter</a></button>
+      <a href="ajouter" class="texdec  w3-button" >Ajouter</a>
         
 
   

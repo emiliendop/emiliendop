@@ -22,21 +22,21 @@
 		  </div>
 		</div>
 </div>
-<div >
+<div class="padding-32" >
     <?php $connexion= new mysqli("localhost","root","","cuisine");
     $id_rec=$_GET['id_rec'];
     $nom=$_GET['nom'];
     ?>
-    <p>Ingrédients neccesaire pour la preparation de <?php echo $nom ;?> : </p>
+    <p><u> Ingrédients neccesaire pour la preparation de <?php echo $nom ;?> : </u></p>
     <?php $requet="SELECT `nom`,`quantite`FROM `recette_ingredient`,`ingredient` where `recette_ingredient`.idIngredient=`ingredient`.id and `recette_ingredient`.idRecette='".$id_rec."'";
         $Result= $connexion->query($requet)
     ;?>
     <ul>
         <?php while($row=$Result->fetch_array(MYSQLI_ASSOC)):?>
-            <li><?php echo $row['nom'].":".$row['quantite']; ?></li><br>
+            <li ><?php echo $row['nom'].":".$row['quantite']; ?></li><br>
         <?php endwhile ?>
     </ul>
-    <p>les etapes de la preparation sont:</p>
+    <p><u>les etapes de la preparation sont:</u></p>
     <?php  $etape="SELECT `description` FROM `etape` WHERE `idRecette`='".$id_rec."'";
         $Resu= $connexion->query($etape);
     ?>
@@ -45,7 +45,7 @@
             <li><?php echo $colom['description'];?></li><br>
         <?php endwhile?>
     </ol>
-    <button><a href="home.php">ACCUEIL</a></button>
+    <a href="home.php"   class="w3-bar-item w3-button red" >ACCUEIL</a>
     
 </body>
 </html>
