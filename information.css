@@ -1,0 +1,12 @@
+body{font-style: italic;
+    font-family: "Amatic SC", sans-serif!important;
+    background-color:black;
+color: white;
+
+}
+.padding-32{padding: 32px;
+font-size:32px;}
+.red{
+    background-color: #f44336!important;
+}
+.redd{color:#f44336!important;}

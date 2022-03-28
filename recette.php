@@ -30,39 +30,27 @@ background-color: black!important;}
 		</div>
 	  </div>
 		<!-- Menu Container -->
+    <?php $connexion= new mysqli("localhost","root","","cuisine");
+        $requet="SELECT * FROM `recette`";
+        $Result= $connexion->query($requet);
+    ?>
 <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
     <div class="w3-content">
     
       <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">RECETTES</h1>
       <div class="w3-row w3-center  ">
        
-          <div class="  w3-padding-large w3-hover-red w3-red">NOS RECETTES LES PLUS CONSULTEES</div>
-        
+          <div class="  w3-padding-large w3-hover-red w3-red">NOS RECETTES LES PLUS CONSULTEES</div> 
        
       </div>
   
-      <div id="Pizza" class="w3-container menu w3-padding-32 w3-white" style="display: block;">
+
+      <?php while($row=$Result->fetch_array(MYSQLI_ASSOC)):?>
+        <p><a href="information.php?id_rec=<?=$row['id']?>&nom=<?=$row['nom']?>"><?php echo $row['nom']; ?></a></p>
+      <?php endwhile?>
+      <a href="ajouter" class="texdec  w3-button" >Ajouter</a>
         
-        <p class="w3-text-grey">BROWNIE<a href=""><span class="w3-right w3-tag w3-dark-grey w3-round">Plus de details</span></a></p>
-        
-        <hr>
-    
-       
-        
-        <p class="w3-text-grey">CHOUQUETTES<a href=""><span class="w3-right w3-tag w3-dark-grey w3-round">Plus de details</span></a></p>
-        
-        <hr>
-  
-        <p class="w3-text-grey">GAUFRES LIEGEOISES<a href=""><span class="w3-right w3-tag w3-dark-grey w3-round">Plus de details</span></a></p>
-        
-        <hr>
-        
-        <a href=""><span class="w3-left w3-tag w3-red w3-round">Plus de recettes</span></a></p>
-     
-      </div>
-      
-      
-     
+
   
     </div>
    
@@ -74,3 +62,4 @@ background-color: black!important;}
 </div>
 </body>
 </html>
+
